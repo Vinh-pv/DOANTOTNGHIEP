@@ -1,0 +1,70 @@
+// Margins and Paddings
+@mixin paddingSide {
+  padding-left: 5%;
+  padding-right: 5%;
+
+  @include md {
+    // padding-left: 15px;
+    // padding-right: 15px;
+  }
+
+  @include sm {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @include xs {
+    // padding-left: 24px;
+    // padding-right: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin spacingM {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @include sm {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@mixin spacingL {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  @include sm {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@mixin spacingXL {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include md {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include sm {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+// wrapper
+@mixin wrapper {
+  @include paddingSide;
+  width: 100%;
+  max-width: 1440px;
+  // max-width: 1140px;
+  margin: 0 auto;
+
+  @include lg {
+    max-width: 960px;
+  }
+}

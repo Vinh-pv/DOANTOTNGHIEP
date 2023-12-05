@@ -1,0 +1,69 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+figure {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// CTA
+.btnContainer {
+  display: inline-flex;
+  width: 100%;
+  padding: 0 15px;
+
+  @include md {
+    justify-content: flex-end;
+    margin-bottom: 16px;
+  }
+
+  @include xs {
+    justify-content: flex-end;
+    margin-bottom: 32px;
+  }
+
+  svg {
+    margin-left: 8px;
+  }
+}
+
+.cta {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease, transform 0.2s ease;
+  margin-top: 3px;
+
+  span {
+    z-index: 1;
+  }
+
+  &:hover {
+    transform: translateX(3px);
+    opacity: 0.6;
+  }
+
+  &.cta01 {
+    color: white;
+
+    &.m-01 {
+      color: $m-01;
+    }
+  }
+}
+
+.error {
+  padding: 0 15px;
+  color: #db3737;
+}

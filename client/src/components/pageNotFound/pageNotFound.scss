@@ -1,0 +1,38 @@
+// variables
+@import "../../styles/variables.scss";
+.pageNotFound {
+  height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  &__title {
+    color: $m-01--light-01;
+    font-size: 136px;
+    font-weight: 700;
+  }
+
+  &__description {
+    color: $m-02;
+    margin-top: 4px;
+  }
+
+  &__link {
+    padding: 0 24px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    color: $m-02;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

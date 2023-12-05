@@ -1,0 +1,93 @@
+// variables
+@import "../../styles/variables.scss";
+
+.contacts {
+  margin-top: 80px;
+  margin-bottom: 24px;
+
+  &__wrapper {
+    @include wrapper;
+    display: flex;
+  }
+
+  &__left {
+    width: 40%;
+  }
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  &__right {
+    width: 60%;
+  }
+
+  &__form {
+    max-width: 720px;
+  }
+
+  &__formHeading {
+    h2 {
+      margin-bottom: 10px;
+      font-size: 36px;;
+    }
+  }
+
+  &__formWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+
+  &__input {
+    border: solid 1px $neu-09;
+    height: 40px;
+    border-radius: 8px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__aside {
+    display: block;
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  textarea {
+    border: solid 1px $neu-09;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  button {
+    height: 40px;
+    padding: 0 40px;
+    border-radius: 8px;
+    background-color: #d11919;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__map {
+    height: 400px;
+    margin-top: 20px;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}
